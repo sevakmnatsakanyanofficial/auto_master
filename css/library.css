@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, button, ul, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * Mobile sizes
+ * Mobile classes do not include screen size
+ */
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    -ms-flex-direction: column!important;
+    flex-direction: column!important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+/*
+ * Desktop sizes
+ * Desktop classes include screen size with suffix -desk
+ */
+@media screen and (min-width: 1280px) {
+    .d-desk-none {
+        display: none;
+    }
+
+    .d-desk-block {
+        display: block;
+    }
+
+    .d-desk-inline {
+        display: inline;
+    }
+
+    .d-desk-flex {
+        display: flex;
+    }
+}

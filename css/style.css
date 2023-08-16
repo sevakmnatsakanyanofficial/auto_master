@@ -1,0 +1,278 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+Armenian&family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: "SONGER SemiExpanded";
+    src: url("../fonts/SONGER_SemiExpanded/SONGER™_SE_Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SONGER SemiExpanded";
+    src: url("../fonts/SONGER_SemiExpanded/SONGER™_SE_Bold.otf");
+    font-weight: bold;
+}
+
+/* Global Styles */
+html {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+/* Header and Nav */
+
+header {
+    background-color: #161616;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
+}
+
+.navbar-logo {
+    font-family: "SONGER SemiExpanded";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navbar-logo_name:nth-child(1) {
+    color: #FF1D19;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.navbar .container {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-nav_call-btn {
+    background-color: #FF1D19;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-left: 3px;
+    padding-top: 3px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-collapse.show .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.navbar-collapse.show .navbar-nav .nav-item {
+    padding: 25px;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #fff;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.navbar-collapse.show {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+    left: 105px;
+    background-color: #161616;
+    border-left: 1px solid #fff;
+}
+
+.navbar-collapse.show .navbar-nav-buttons .order-call-btn {
+    border: 2px solid #FFF;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 76px;
+    padding: 13px 64px;
+    text-align: center;
+    font-family: "SONGER SemiExpanded";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1280px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav_call-btn {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        align-items: center;
+        flex-grow: 1;
+        margin-left: 50px;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .navbar-nav-buttons {
+        margin-left: auto;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .navbar-nav-buttons .order-call-btn {
+        margin-left: 40px;
+        width: 176px;
+        height: 34px;
+        border: 1px solid #FFF;
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 8px 16px;
+    }
+}
+
+/* Header and Nav End */
+
+/* First Trigger */
+
+#first-trigger {
+    background-color: #161616;
+    padding-top: 64px;
+    padding-bottom: 60px;
+}
+
+#first-trigger-header {
+    color: #FFF;
+    font-family: "SONGER SemiExpanded";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 87px;
+}
+
+#first-trigger-subheader {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    max-width: 143px;
+    display: inline-block;
+}
+
+.register-btn {
+    height: 62px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 18px 100px;
+    font-family: "SONGER SemiExpanded";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    #first-trigger {
+        /*background: #161616 url("../img/car_font_bg.jpg") no-repeat top right;*/
+        /*background-size: contain;*/
+        padding-top: 0;
+        position: relative;
+        z-index: -9999;
+    }
+
+    .first-trigger-img {
+        margin-top: 0;
+    }
+
+    .register-btn {
+        padding: 18px 159px;
+    }
+
+    #first-trigger-header {
+        font-size: 44px;
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+
+    #first-trigger-subheader {
+        font-size: 20px;
+        max-width: 235px;
+    }
+
+    .first-trigger-bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -99;
+        bottom: 60px;
+        max-width: 705px;
+        opacity: 0.1;
+    }
+
+    .first-trigger-bg img {
+        max-height: 100%;
+    }
+}
+
+/* First Trigger End */
