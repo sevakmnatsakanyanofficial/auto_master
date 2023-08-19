@@ -607,3 +607,90 @@ header {
 }
 
 /* About Company End */
+
+/* Team */
+
+#team {
+    background-color: lightgray;
+    padding-top: 120px;
+    padding-bottom: 180px;
+}
+
+#team .hr {
+    border-color: #FF1D19;
+}
+
+#team .team_heading {
+    color: #161616;
+    font-family: "SONGER SemiExpanded";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#team .team_img {
+    height: 222px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
+#team .team_row {
+    margin-top: 84px;
+}
+
+#team .team_row .team_row-item:nth-child(1),
+#team .team_row .team_row-item:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+#team .team_row .team_row-item h5 {
+    color: #161616;
+    font-family: "SONGER SemiExpanded";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+#team .team_row .team_row-item small {
+    color: #A1A1A1;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+@media screen and (min-width: 1280px) {
+    #team .team_heading {
+        font-size: 40px;
+    }
+
+    #team .team_img {
+        height: 350px;
+        margin-bottom: 5px;
+        margin-top: 16px;
+    }
+
+    #team .team_row {
+        margin-top: 60px;
+    }
+
+    #team .team_row .team_row-item:nth-child(1),
+    #team .team_row .team_row-item:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    #team .team_row .team_row-item h5 {
+        font-size: 18px;
+    }
+
+    #team .team_row .team_row-item small {
+        font-size: 16px;
+    }
+}
+/* Team End */
