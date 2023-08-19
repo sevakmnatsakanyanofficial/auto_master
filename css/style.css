@@ -276,3 +276,182 @@ header {
 }
 
 /* First Trigger End */
+
+/* Services and prices */
+
+#services-prices {
+    padding-top: 78px;
+    padding-bottom: 100px;
+    background-color: #161616;
+}
+
+#services-prices .hr {
+    height: 0px;
+    border: 0.5px solid #323232;
+}
+
+#services-prices .service-prices_heading {
+    max-width: 165px;
+    color: #FFF;
+    font-family: "SONGER SemiExpanded";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#services-prices a.service-prices_catalog-link {
+    color: #FFF;
+    font-family: "SONGER SemiExpanded";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services-prices > .container {
+    margin-bottom: 20px;
+}
+
+#services-prices .service-row {
+    margin-top: 40px;
+}
+
+#services-prices .services-list_link{
+    color: #FFF;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: 30px;
+}
+
+#services-prices .services-list-container {
+    position: relative;
+}
+
+.service-row_service-title {
+    color: #FFF;
+    font-family: "SONGER SemiExpanded";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 100%;
+}
+
+.service-row_services-list {
+    color: #A1A1A1;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.services-list_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.service-row .service-row_border-bottom {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+@media screen and (min-width: 1280px) {
+    #services-prices {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        background-color: #161616;
+    }
+
+    #services-prices .service-prices_heading {
+        max-width: 100%;
+        font-size: 40px;
+    }
+
+    #services-prices a.service-prices_catalog-link {
+        justify-content: start;
+        font-size: 20px;
+    }
+
+    #services-prices a.service-prices_catalog-link > a {
+        margin-left: 30px;
+    }
+
+    #services-prices a.service-prices_catalog-link > span:after{
+        content: " ";
+        display: inline-block;
+        width: 30px;
+    }
+
+    .service-row_service-title {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .service-row_services-list {
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        float: left;
+    }
+
+    #services-prices .services-list_link{
+        display: block;
+        float: right;
+        position: static;
+        width: auto;
+    }
+
+    .service-row .service-row_border-bottom {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 19px;
+    }
+
+    #services-prices .services-list-img {
+        position: absolute;
+        left: 41.66%;
+        bottom: -25px;
+        display: none;
+    }
+
+    #services-prices .service-row:hover {
+        background: linear-gradient(180deg, #3E3E3E 0%, rgba(62, 62, 62, 0.00) 100%);
+    }
+
+    #services-prices .service-row:hover .services-list_link .services-list_sign > svg > line {
+        stroke: #FF1D19;
+    }
+
+    #services-prices .service-row_services-list > li:hover {
+        color: #A1A1A1;
+    }
+
+    #services-prices .service-row:hover .services-list-img {
+        display: block;
+    }
+
+    #services-prices .service-row {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    #services-prices > .container {
+        margin-bottom: 40px;
+    }
+}
+
+/* Services and prices End */

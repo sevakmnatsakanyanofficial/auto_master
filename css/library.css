@@ -4,6 +4,7 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    line-height: 100%;
 }
 
 body, button, ul, h1, h2, h3, h4, h5, h6 {
@@ -42,6 +43,28 @@ body, button, ul, h1, h2, h3, h4, h5, h6 {
 
 .justify-content-space-between {
     justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.unstyle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /*
